@@ -1,8 +1,15 @@
 @use '/src/styles/constants/colors';
 
 .app {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  width: 720px;
+  height: 720px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: colors.$CORAL;
+  border-radius: 50px;
 }

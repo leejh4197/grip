@@ -1,0 +1,39 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/position';
+
+.listWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$GRAYA;
+  border-bottom: 1px solid colors.$CORAL;
+}
+
+.starIcon {
+  position: absolute;
+  @include position.absolute(5px 0 0 95%);
+  width: 30px;
+  height: 30px;
+  color: colors.$CORAL;
+}
+
+.imgWrap {
+  width: 130px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+}
+
+.movieDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+
+  span {
+    margin-bottom: 20px;
+  }
+}

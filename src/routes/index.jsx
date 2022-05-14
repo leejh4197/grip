@@ -1,22 +1,20 @@
 import styles from './Routes.module.scss'
 import { Routes, Route } from 'react-router-dom'
-import TodoList from './TodoList'
-import Weather from './Weathers'
-import GNB from 'routes/_shared/GNB'
+import Favorite from 'pages/Favorite/Favorite'
+import FooterBtn from 'components/SearchBar/FooterBtn/FooterBtn'
+import MovieList from 'components/SearchBar/MovieList/MovieList'
+import SearchBar from 'components/SearchBar/SearchBar'
+import Main from 'pages/Main/Main'
 
 const App = () => {
   return (
     <div className={styles.appWrapper}>
-      <GNB />
       <div className={styles.app}>
         <Routes>
-          <Route path='/' element={<TodoList />} />
-          <Route path='todo' element={<TodoList />} />
-          <Route path='weather' element={<Weather />}>
-            <Route path=':city' element={<Weather />} />
-          </Route>
-          <Route path='*' element={<div>404</div>} />
+          <Route path='/' element={<Main />} />
+          <Route path='favorite' element={<Favorite />} />
         </Routes>
+        <FooterBtn />
       </div>
     </div>
   )

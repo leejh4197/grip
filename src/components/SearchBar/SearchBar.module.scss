@@ -1,0 +1,23 @@
+@use '/src/styles/constants/colors';
+
+.searchBarWrap {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.searchBar {
+  width: 80%;
+  height: 30px;
+  border-bottom: 1px solid colors.$GRAY2;
+}
+
+.searchButton {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  color: colors.$WHITE;
+  background-color: colors.$GRAY6;
+}

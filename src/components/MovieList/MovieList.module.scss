@@ -1,0 +1,10 @@
+@use '/src/styles/constants/colors';
+
+.movieListWrap {
+  position: absolute;
+  top: 15%;
+  width: 90%;
+  height: 550px;
+  overflow: auto;
+  background-color: colors.$WHITE;
+}
