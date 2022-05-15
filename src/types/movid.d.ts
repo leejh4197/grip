@@ -1,9 +1,9 @@
 type Movie = {
-  title: string
-  year: string
+  Title: string
+  Year: string
   imdbID: string
-  type: string
-  poster: string
+  Type: string
+  Poster: string
 }
 
 export type { Movie }

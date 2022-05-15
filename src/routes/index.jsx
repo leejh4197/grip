@@ -1,8 +1,8 @@
 import styles from './Routes.module.scss'
 import { Routes, Route } from 'react-router-dom'
 import Favorite from 'pages/Favorite/Favorite'
-import FooterBtn from 'components/SearchBar/FooterBtn/FooterBtn'
-import MovieList from 'components/SearchBar/MovieList/MovieList'
+import FooterBtn from 'components/FooterBtn/FooterBtn'
+import MovieList from 'components/MovieList/MovieList'
 import SearchBar from 'components/SearchBar/SearchBar'
 import Main from 'pages/Main/Main'
 

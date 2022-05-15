@@ -1,16 +1,17 @@
 import styles from './SearchBar.module.scss'
 import { axiosInstance } from 'shared/api'
 import { useState } from 'react'
-import { Movie } from 'types/movid'
+import { useRecoilState } from 'recoil'
+import { movieListAtom } from '../../store/Atom'
 
 const SearchBar = () => {
   const [search, setSearch] = useState('')
-  const [movieList, setMovieList] = useState<Movie[]>([])
-  console.log(movieList)
+  const [movieList, setMovieList] = useRecoilState(movieListAtom) // useState랑 사용법 같음
 
   const searchInput = (e: any) => {
     setSearch(e.currentTarget.value)
   }
+
   const getSearch = () => {
     axiosInstance
       .post(`/?apikey=92e32667&s=${search}&page={2}`)

@@ -6,10 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 400px;
   height: 100px;
   background-color: colors.$CORAL;
+  @include position.fixed(45% 0 0 50%);
   transform: translate(-50%, -50%);
-  @include position.absolute(150% 0 0 50%);
 }
 
 .btnWrap {

@@ -6,11 +6,6 @@ const MovieList = () => {
     <div className={styles.movieListWrap}>
       <div className={styles.movieList}>
         <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
       </div>
     </div>
   )
